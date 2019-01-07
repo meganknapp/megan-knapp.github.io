@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Megan Knapp</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rhc3gln.css">
+    <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Megan Knapp portfolio">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Megan Knapp">
+    
+    <script src="main.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+</head>
+    
+<body>
+    
+<nav class="nav">
+  <a href="index.html" class="logo"><img src="img/transparent-logo.png"></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">About</a></li>
+    <li><a href="index.html">Portfolio</a></li>
+    <li><a href="index.html">Contact</a></li>
+  </ul>
+</nav>
+    
+<div class="resume">
+    <div class="grid">
+        <p class="introduction">HI! MY NAME IS </p>
+        <p class="name">MEGAN KNAPP</p>
+        <p>If I have learnt anything in my journey to become a great desinger, it is that it's not enough to build projects that are just understandable and usable; it is necessary to build projects that bring joy, excitement, pleasure, and beauty into peoples lives. I am a junior at Ohio University majoring in interactive design, minoring in marketing, and earning a certificate in social media. To further my education outside the classroom, I participate in a few extracurricular activities. As the Digital Production Editor for The Post, I develop and design projects for <a href="https://www.thepostathens.com/" target="_blank">thepostathens.com</a>. I am also a member of the <a href="http://ohioums.com/" target="_blank">Ohio University Multimedia Society</a>, a club which promotes learning through peer review and workshops with professionals. 
+        
+        <br><br>
+        
+        It's hard to catch me without headphones in, I love discovering new music and can always appreciate a live show. My other interests incude hiking, and as of late, binge watching movies (my favorite right now is <a href="https://www.imdb.com/title/tt4698684/" target="_blank"><i>Hunt for the Wilderpeople</i></a>.) If you have any questions, would like to work together, or just want to say hi, contact me <a href="mailto:knappmegann@gmail.com?" target="_top">here</a>.</p> 
+        <br> 
+        
+        
+        <p> Check out my resume to see more of my professional skills.</p>
+        <img id="myImg" src="img/the%20real%20real%20real%20real%20resume%20for%20real%20ths%20time%20im%20DONE%20with%20this%20bs.jpg" alt="Resume" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+        
+    </div> 
+    
+    <div class="grid">
+        <img src="img/portrait.jpg">
+    </div>
+</div>    
+    
+<footer class="footer">
+    <div class="information">
+        <a href="https://www.facebook.com/megnknapp"><i class="fab fa-facebook-f fa-2x" style="color:#f4f4f4" target="_blank"></i></a>
+        <a href="https://twitter.com/megnknapp"><i class="fab fa-twitter fa-2x" style="color:#f4f4f4" target="_blank"></i></a>
+        <a href="https://www.linkedin.com/in/megknapp/"><i class="fab fa-linkedin-in fa-2x" style="color:#f4f4f4" target="_blank"></i></a>  
+        <i class="fab fa-behance fa-2x"></i>
+    </div>
+    <div class="copyright"><p> © 2018 Megan Knapp</p></div>
+</footer>
+    
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+    
+</body>
+</html>  
